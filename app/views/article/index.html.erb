@@ -1,0 +1,8 @@
+<% @articles.each do |article| %>
+  <div class="article">
+    <h2><%= article.title %></h2>
+    <h3><%= article.description %></h3>
+    <p><%= article.body %></p>
+    <%= link_to "Read More", article_path(post), :class =>'btn btn-default' %>
+  </div>
+<% end %>
